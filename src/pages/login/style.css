@@ -1,0 +1,40 @@
+#root {
+ 
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #000;
+  background-color: #ffffff;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  gap: 8px;
+
+}
+#email{
+  max-width: 450px;
+  max-height: 45px;
+  border-radius: 8px;
+}
+#password{
+  max-width: 450px;
+  max-height: 45px;
+  border-radius: 8px;
+}
+.btn{
+  max-width: 450px;
+  max-height: 45px;
+  border-radius: 15px;
+  
+}
+.link-password{
+  color: #000;
+  text-decoration: none;
+}
+.link-password:hover{
+  opacity: 0.8;
+}
