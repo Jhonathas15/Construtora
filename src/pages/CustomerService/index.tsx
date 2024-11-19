@@ -3,7 +3,7 @@ import Textarea from "../../components/Textarea";
 
 function CustomerService() {
   return (
-    <div className="h-full w-full p-2">
+    <div className="h-full w-full p-5">
       <section className="mb-2">
         <h2 className="text-2xl font-semibold">ATENDIMENTO AO CLIENTE</h2>
         <p className="text-balance lg:text-xl">

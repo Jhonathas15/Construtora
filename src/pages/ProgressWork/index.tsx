@@ -3,9 +3,9 @@ import Card from "../../assets/card-1.jpeg";
 
 function ProgressWork() {
   return (
-      <div className="h-full w-full p-2">
+      <div className="h-full w-full p-5">
         <section className="mb-5">
-          <h2 className="text-2xl font-semibold">ANDAMENTO DE OBRAS</h2>
+          <h2 className="text-2xl font-semibold mb-2">ANDAMENTO DE OBRAS</h2>
           <Select />
         </section>
         <section className="flex flex-col xl:grid xl:grid-cols-2">

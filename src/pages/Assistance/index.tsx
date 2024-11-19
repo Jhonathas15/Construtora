@@ -3,9 +3,9 @@ import Textarea from "../../components/Textarea";
 
 function Assistance() {
   return (
-      <div className="h-full w-full p-2">
+      <div className="h-full w-full p-5">
         <section className="mb-10">
-          <h2 className="text-2xl font-bold">ASSISTÊNCIA TÉCNICA</h2>
+          <h2 className="text-2xl font-semibold">ASSISTÊNCIA TÉCNICA</h2>
           <p className="text-balance lg:text-xl">
             Tem dúvidas, sugestões ou precisa de ajuda? Conte com a gente. Nos
             envie uma mensagem com sua solicitação que em breve nossa equipe de
