@@ -214,6 +214,17 @@ function Sidebar({ children }: Props) {
               @youtube.com
             </li>
           </ul>
+          <div className="w-full flex justify-end p-5">
+            <button
+              className=""
+              onClick={() => {
+                router("/login");
+                setFocus("login");
+              }}
+            >
+              Sair
+            </button>
+          </div>
         </footer>
       </aside>
       {children}
