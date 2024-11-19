@@ -3,8 +3,9 @@ import SidebarMenu from "../../components/SidebarMenu";
 
 function Profile() {
   return (
-    <Sidebar>
-      <SidebarMenu>
+    <main className="flex">
+    <Sidebar />
+      <SidebarMenu />
         <div className="h-full w-full p-5">
           <section>
             <h2 className="text-2xl font-semibold">MEU PERFIL</h2>
@@ -42,8 +43,7 @@ function Profile() {
             </button>
           </form>
         </div>
-      </SidebarMenu>
-    </Sidebar>
+      </main>
   );
 }
 export default Profile;

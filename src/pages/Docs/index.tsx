@@ -4,8 +4,9 @@ import SidebarMenu from "../../components/SidebarMenu";
 
 function DocsProjects() {
   return (
-    <Sidebar>
-      <SidebarMenu>
+    <main>
+    <Sidebar />
+      <SidebarMenu />
         <div className="h-full p-5">
           <section className="mb-10">
             <h2 className="text-2xl font-semibold">DOCS/MANUAIS/PROJETOS</h2>
@@ -65,8 +66,7 @@ function DocsProjects() {
             </div>
           </section>
         </div>
-      </SidebarMenu>
-    </Sidebar>
+      </main>
   );
 }
 export default DocsProjects;

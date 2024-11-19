@@ -1,11 +1,7 @@
 import Details from "../../components/Details";
-import Sidebar from "../../components/Sidebar";
-import SidebarMenu from "../../components/SidebarMenu";
 
 function QuestionAnswer() {
   return (
-    <Sidebar>
-      <SidebarMenu>
       <div className="h-full w-full p-5">
         <section className="mb-10">
           <h2 className="text-2xl font-semibold">PERGUNTAS E RESPOSTAS</h2>
@@ -22,8 +18,6 @@ function QuestionAnswer() {
           <Details />
         </section>
       </div>
-      </SidebarMenu>
-    </Sidebar>
   );
 }
 export default QuestionAnswer;
