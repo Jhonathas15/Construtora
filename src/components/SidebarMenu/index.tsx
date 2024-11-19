@@ -33,9 +33,12 @@ function SidebarMenu({ children }: Props) {
 
   return (
     <main className="w-full">
-      <div className="md:hidden w-full h-14 flex justify-between px-2 items-center ">
-        <button className="p-2 relative md:hidden" onClick={toggleSidebar}>
-          <IoMenuSharp size={25} className="border-2 rounded-md " />
+      <div className="md:hidden w-full h-14 flex justify-between text-white items-center bg-black ">
+        <header className="flex p-2 justify-center">
+          <h2 className="text-2xl md:text-3xl font-bold">Portal do Cliente</h2>
+        </header>
+        <button className="p-2 md:hidden" onClick={toggleSidebar}>
+          <IoMenuSharp size={25} className="border-2 rounded-md" />
         </button>
       </div>
       <div
@@ -43,9 +46,6 @@ function SidebarMenu({ children }: Props) {
           isOpen ? "absolute" : "hidden"
         }  w-5/6 sm:w-1/2 md:hidden flex-col p-2 bg-black text-white`}
       >
-        <header className="flex p-2 justify-center">
-          <h2 className="text-2xl md:text-3xl font-bold">Portal do Cliente</h2>
-        </header>
         <nav className="w-full">
           <ul className="list-none flex flex-col items-center m-1">
             <li

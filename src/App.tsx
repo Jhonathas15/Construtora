@@ -15,24 +15,25 @@ import SidebarMenu from "./components/SidebarMenu";
 function App() {
   return (
     <BrowserRouter>
-    <Sidebar>
-    <SidebarMenu>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/assistance" element={<Assistance />} />
-        <Route path="/my_profile" element={<Profile />} />
-        <Route path="/customer_service" element={<CustomerService />} />
-        <Route path="/doc_request" element={<DocRequest />} />
-        <Route path="/financial" element={<Financial />} />
-        <Route path="/questions_answers" element={<QuestionAnswer />} />
-        <Route path="/docs_manuals_porjects" element={<DocsProjects />} />
-        <Route path="/progress_work" element={<ProgressWork/>}/>
       </Routes>
-      </SidebarMenu>
+      <Sidebar>
+        <SidebarMenu>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/assistance" element={<Assistance />} />
+            <Route path="/my_profile" element={<Profile />} />
+            <Route path="/customer_service" element={<CustomerService />} />
+            <Route path="/doc_request" element={<DocRequest />} />
+            <Route path="/financial" element={<Financial />} />
+            <Route path="/questions_answers" element={<QuestionAnswer />} />
+            <Route path="/docs_manuals_porjects" element={<DocsProjects />} />
+            <Route path="/progress_work" element={<ProgressWork />} />
+          </Routes>
+        </SidebarMenu>
       </Sidebar>
     </BrowserRouter>
-
   );
 }
 export default App;
