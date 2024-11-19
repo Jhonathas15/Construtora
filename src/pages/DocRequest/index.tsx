@@ -4,7 +4,7 @@ import Textarea from "../../components/Textarea";
 function DocRequest() {
   return (
 
-      <div className="h-full w-full m-1 p-2">
+      <div className="h-full w-full p-2">
         <section className="mb-10">
           <h2 className="text-2xl font-bold">SOLICITAÇÃO DE DOCUMENTOS</h2>
           <p className="lg:text-xl text-balance">
