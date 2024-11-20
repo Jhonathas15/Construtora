@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="w-full p-5">
       <h3 className="text-2xl font-bold mb-3">MEUS IMOVEIS</h3>
-      <section className="sm:grid sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-2 w-full mb-8">
+      <section className="sm:grid sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-6 w-full mb-8">
         <div className="border hover:border-black hover:hover:-translate-y-0.5 hover:translate-x-0.5 hover:bg-black hover:text-white cursor-pointer">
           <div className="card relative -z-10">
             <img className=" w-full aspect-video" src={Card1} alt="" />
