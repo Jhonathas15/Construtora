@@ -21,10 +21,9 @@ function Sidebar({ children }: Props) {
     router("/");
     setFocus("home");
   }, []);
-
   return (
     <main className="flex">
-      <aside className="hidden md:flex flex-col min-h-screen md:w-1/2 lg:w-2/5 sm:justify-evenly bg-black text-white">
+      <aside className="hidden md:flex flex-col min-h-screen md:w-3/4 lg:w-2/5 sm:justify-evenly bg-black text-white">
         <header className="flex flex-col items-center">
           <div className="flex flex-col w-3/4">
             <RiTeamLine size={60} />

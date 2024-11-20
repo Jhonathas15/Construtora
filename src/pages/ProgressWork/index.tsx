@@ -8,7 +8,7 @@ function ProgressWork() {
           <h2 className="text-2xl font-semibold mb-2">ANDAMENTO DE OBRAS</h2>
           <Select />
         </section>
-        <section className="flex flex-col xl:grid xl:grid-cols-2">
+        <section className="flex flex-col lg:grid lg:grid-cols-2">
           <div className="card p-2">
             <img src={Card} alt="Imagem" />
           </div>

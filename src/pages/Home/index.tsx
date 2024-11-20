@@ -75,7 +75,7 @@ function Home() {
       </section>
       <section className="flex mt-10 flex-col">
         <h2 className="text-2xl font-semibold mb-5">ACESSO RÁPIDO</h2>
-        <div className="sm:grid sm:grid-cols-3">
+        <div className="lg:grid lg:grid-cols-3">
           <p className="text-xl mb-1 font-semibold underline hover:opacity-70">
             <a href="">Reimpressão de boletos</a>
           </p>
