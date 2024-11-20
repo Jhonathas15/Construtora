@@ -1,12 +1,9 @@
 import Select from "../../components/Select";
-import Sidebar from "../../components/Sidebar";
-import SidebarMenu from "../../components/SidebarMenu";
+
 
 function DocsProjects() {
   return (
-    <main>
-    <Sidebar />
-      <SidebarMenu />
+    
         <div className="h-full p-5">
           <section className="mb-10">
             <h2 className="text-2xl font-semibold">DOCS/MANUAIS/PROJETOS</h2>
@@ -66,7 +63,6 @@ function DocsProjects() {
             </div>
           </section>
         </div>
-      </main>
   );
 }
 export default DocsProjects;
