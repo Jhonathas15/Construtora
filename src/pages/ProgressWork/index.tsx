@@ -1,8 +1,13 @@
 import Select from "../../components/Select";
 import Card from "../../assets/card-1.jpeg";
+import Sidebar from "../../components/Sidebar";
+import SidebarMenu from "../../components/SidebarMenu";
 
 function ProgressWork() {
   return (
+    <div className="flex flex-col md:flex-row">
+    <Sidebar />
+    <SidebarMenu />
       <div className="h-full w-full p-5">
         <section className="mb-5">
           <h2 className="text-2xl font-semibold mb-2">ANDAMENTO DE OBRAS</h2>
@@ -33,6 +38,7 @@ function ProgressWork() {
             </ul>
           </div>
         </section>
+      </div>
       </div>
   );
 }

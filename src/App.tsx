@@ -15,8 +15,8 @@ import SidebarMenu from "./components/SidebarMenu";
 function App() {
   return (
     <BrowserRouter>
-    <Sidebar>
-    <SidebarMenu>
+    {/* <Sidebar>
+    <SidebarMenu> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -29,8 +29,8 @@ function App() {
         <Route path="/docs_manuals_porjects" element={<DocsProjects />} />
         <Route path="/progress_work" element={<ProgressWork/>}/>
       </Routes>
-      </SidebarMenu>
-      </Sidebar>
+      {/* </SidebarMenu>
+      </Sidebar> */}
     </BrowserRouter>
 
   );

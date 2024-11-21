@@ -5,46 +5,42 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate, useLocation } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
+import { RxExit } from "react-icons/rx";
+import { IoCloseSharp } from "react-icons/io5";
 
-type Props = {
-  children: ReactNode;
-};
-function SidebarMenu({ children }: Props) {
+function SidebarMenu() {
   const [focus, setFocus] = useState("");
-  let router = useNavigate();
-
-  useEffect(() => {
-    router("/");
-    setFocus("home");
-  }, []);
+  const router = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const toggleSidebar = () => setIsOpen(!isOpen);
-
+  
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
   return (
-    <main className="w-full">
-      <div className="md:hidden w-full h-14 flex justify-between text-white items-center bg-black ">
-        <header className="flex p-2 justify-center">
-          <h2 className="text-2xl md:text-3xl font-bold">Portal do Cliente</h2>
-        </header>
-        <button className="p-2 md:hidden" onClick={toggleSidebar}>
-          <IoMenuSharp size={25} className="border-2 rounded-md" />
+    <main className="flex">
+      <div className="md:hidden w-full h-24 flex justify-between text-white items-center bg-black px-5">
+        <h2 className="text-2xl md:text-3xl font-bold">Portal do Cliente</h2>
+        <button className="md:hidden" onClick={toggleSidebar}>
+          {isOpen ? (
+            <IoCloseSharp size={25} />
+          ) : (
+            <IoMenuSharp size={25} className="" />
+          )}
         </button>
       </div>
       <div
-        className={` ${
-          isOpen ? "absolute" : "hidden"
-        }  w-5/6 sm:w-1/2 md:hidden flex-col p-2 bg-black text-white`}
+        className={` ${isOpen ? "flex" : "hidden"} ${
+          isOpen ? "" : ""
+        } absolute z-10  top-24 w-full sm:w-1/2 md:hidden flex-col  bg-black text-white`}
       >
         <nav className="w-full">
           <ul className="list-none flex flex-col items-center m-1">
@@ -227,9 +223,20 @@ function SidebarMenu({ children }: Props) {
               @youtube.com
             </li>
           </ul>
+          <div className="w-full flex justify-end p-5">
+            <button
+              className="flex justify-center items-center gap-2 border rounded-md shadow-sm p-1 hover:bg-slate-600"
+              onClick={() => {
+                router("/login");
+                setFocus("login");
+              }}
+            >
+              <RxExit />
+              Sair
+            </button>
+          </div>
         </footer>
       </div>
-      {children}
     </main>
   );
 }
