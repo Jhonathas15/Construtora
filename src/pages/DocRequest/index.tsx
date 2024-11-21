@@ -1,9 +1,13 @@
 import Select from "../../components/Select";
+import Sidebar from "../../components/Sidebar";
+import SidebarMenu from "../../components/SidebarMenu";
 import Textarea from "../../components/Textarea";
 
 function DocRequest() {
   return (
-
+    <div className="flex flex-col md:flex-row">
+      <Sidebar />
+      <SidebarMenu />
       <div className="h-full w-full p-5">
         <section className="mb-10">
           <h2 className="text-2xl font-bold">SOLICITAÇÃO DE DOCUMENTOS</h2>
@@ -72,6 +76,7 @@ function DocRequest() {
           </section>
         </form>
       </div>
+    </div>
   );
 }
 export default DocRequest;

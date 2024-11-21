@@ -1,8 +1,9 @@
+
 function Login() {
   return (
     <main className="bg-[url('./assets/construtora.jpeg')] h-screen w-screen bg-no-repeat bg-cover">
       <div className="bg-white/60 h-screen w-screen">
-        <article className="flex flex-col h-screen justify-center items-center w-screen text-center">
+        <div className="flex flex-col h-screen justify-center items-center w-screen text-center">
           <section className="text-balance mb-1">
             <h3 className="font-bold text-5xl">Portal do cliente</h3>
             <p className="mb-3">
@@ -11,14 +12,14 @@ function Login() {
             </p>
           </section>
           <section className="flex flex-col justify-center">
-            <form className="flex flex-col">
+            <form className="flex flex-col relative">
               <input
                 className="border-black w-80 p-2 mb-1 rounded-lg"
                 type="text"
                 placeholder="Email cadastrado"
               />
               <input
-                className="border-black w-80 p-2 mb-3 rounded-lg"
+                className="relative border-black w-80 p-2 mb-3 rounded-lg"
                 type="text"
                 placeholder="Sua senha"
               />
@@ -39,7 +40,7 @@ function Login() {
               </a>
             </section>
           </section>
-        </article>
+        </div>
       </div>
     </main>
   );
