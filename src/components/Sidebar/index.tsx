@@ -34,7 +34,7 @@ function Sidebar() {
             <button
               className="w-full flex justify-between items-center"
               onClick={() => {
-                router("/home");
+                router("/");
                 setFocus("home");
               }}
             >
