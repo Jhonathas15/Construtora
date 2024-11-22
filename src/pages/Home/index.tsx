@@ -13,7 +13,7 @@ function Home() {
           <div className="border hover:border-black hover:hover:-translate-y-0.5 hover:translate-x-0.5 hover:bg-black hover:text-white cursor-pointer">
             <div className="card relative -z-10">
               <img className=" w-full aspect-video" src={Card1} alt="" />
-              <p className="w-1/2 md:w-3/4 xl:w-1/2 p-1 absolute bottom-0 right-0 bg-slate-900 text-white text-center rounded-t-md rounded-s-md">
+              <p className="w-1/2 md:w-3/4 xl:w-1/2 p-1 absolute bottom-0 right-0 bg-slate-900 text-white text-center">
                 Em construção
               </p>
             </div>
