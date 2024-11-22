@@ -16,7 +16,7 @@ function SidebarMenu() {
   const [focus, setFocus] = useState("");
   const router = useNavigate();
 
-  useEffect(() => {}, [window.onload = () => router("/")]);
+  useEffect(() => {}, [window.onload = () => router(focus)]);
 
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef<HTMLDivElement | null>(null);
