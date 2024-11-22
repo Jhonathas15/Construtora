@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { RiTeamLine } from "react-icons/ri";
@@ -15,6 +15,7 @@ function Sidebar() {
   const [focus, setFocus] = useState("");
   const router = useNavigate();
 
+  useEffect(() => {}, [window.onload = () => router("/")]);
   return (
     <aside className="hidden md:flex flex-col min-h-screen md:w-3/4 lg:w-2/5 sm:justify-evenly bg-black text-white">
       <header className="flex flex-col items-center">
