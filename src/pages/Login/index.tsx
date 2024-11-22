@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { IoEye } from "react-icons/io5";
-import { IoEyeOff } from "react-icons/io5";
+import { LuEye } from "react-icons/lu";
+import { LuEyeOff } from "react-icons/lu";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -33,13 +33,13 @@ function Login() {
                   placeholder="Sua senha"
                 />
                 {showPassword ? (
-                  <IoEyeOff
+                  <LuEyeOff
                     className="absolute top-3 right-2 cursor-pointer opacity-90"
                     size={20}
                     onClick={clickPassword}
                   />
                 ) : (
-                  <IoEye
+                  <LuEye
                     className="absolute top-3 right-2 cursor-pointer opacity-90"
                     size={20}
                     onClick={clickPassword}
