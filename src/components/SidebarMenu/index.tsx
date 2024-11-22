@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate, useLocation } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
@@ -17,10 +17,26 @@ function SidebarMenu() {
   const router = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement | null>(null);
   const location = useLocation();
 
   const toggleSidebar = () => setIsOpen(!isOpen);
-  
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        event.target instanceof Node &&
+        !sidebarRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
@@ -37,7 +53,7 @@ function SidebarMenu() {
           )}
         </button>
       </div>
-      <div
+      <div ref={sidebarRef}
         className={` ${isOpen ? "flex" : "hidden"} ${
           isOpen ? "" : ""
         } absolute z-10  top-24 w-full sm:w-1/2 md:hidden flex-col  bg-black text-white`}

@@ -17,7 +17,7 @@ function DocsProjects() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">Documentos enviados</h2>
-          <div className="overflow-hidden rounded-xl border-2 border-black w-full md:w-full lg:w-3/4 xl:w-1/3 ">
+          <div className="overflow-hidden rounded-xl border-2 border-black w-full md:w-full lg:w-3/4 xl:w-2/3 2xl:w-1/2 ">
             <table className="w-full text-center">
               <thead className="bg-gray-300 border-b-2 border-black">
                 <tr className="">
