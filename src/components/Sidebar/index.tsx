@@ -34,7 +34,7 @@ function Sidebar() {
             <button
               className="w-full flex justify-between items-center"
               onClick={() => {
-                window.location.pathname = "/";
+                router("/home");
                 setFocus("home");
               }}
             >
@@ -50,7 +50,7 @@ function Sidebar() {
             <button
               className="w-full flex justify-between items-center"
               onClick={() => {
-                window.location.pathname = "/progress_work";
+                router("/progress_work");
                 setFocus("progress_work");
               }}
             >
