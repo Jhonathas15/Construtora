@@ -18,7 +18,7 @@ function Login() {
             </p>
           </section>
           <section className="flex flex-col justify-center">
-            <form className="flex flex-col relative">
+            <form method="post" className="flex flex-col relative">
               <div className="email">
                 <input
                   className="border-black w-80 p-2 mb-1 rounded-lg outline-none"
