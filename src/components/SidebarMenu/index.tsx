@@ -16,7 +16,7 @@ function SidebarMenu() {
   const [focus, setFocus] = useState("");
   const router = useNavigate();
 
-  useEffect(() => {}, [window.onload = () => router(focus)]);
+  useEffect(() => {}, [(window.onload = () => router(focus))]);
 
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef<HTMLDivElement | null>(null);
@@ -55,7 +55,8 @@ function SidebarMenu() {
           )}
         </button>
       </div>
-      <div ref={sidebarRef}
+      <div
+        ref={sidebarRef}
         className={` ${isOpen ? "flex" : "hidden"} ${
           isOpen ? "" : ""
         } absolute z-10  top-24 w-full sm:w-1/2 md:hidden flex-col  bg-black text-white`}

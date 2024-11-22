@@ -15,7 +15,7 @@ function Sidebar() {
   const [focus, setFocus] = useState("");
   const router = useNavigate();
 
-  useEffect(() => {}, [window.onload = () => router(focus)]);
+  useEffect(() => {}, [(window.onload = () => router(focus))]);
   return (
     <aside className="hidden md:flex flex-col min-h-screen md:w-3/4 lg:w-2/5 sm:justify-evenly bg-black text-white">
       <header className="flex flex-col items-center">
