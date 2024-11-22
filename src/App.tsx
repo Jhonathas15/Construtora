@@ -10,13 +10,10 @@ import Financial from "./pages/Financial";
 import QuestionAnswer from "./pages/QuestionAnswer";
 import DocsProjects from "./pages/Docs";
 import ProgressWork from "./pages/ProgressWork";
-import Sidebar from "./components/Sidebar";
-import SidebarMenu from "./components/SidebarMenu";
+
 function App() {
   return (
     <BrowserRouter>
-    {/* <Sidebar>
-    <SidebarMenu> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -29,8 +26,6 @@ function App() {
         <Route path="/docs_manuals_porjects" element={<DocsProjects />} />
         <Route path="/progress_work" element={<ProgressWork/>}/>
       </Routes>
-      {/* </SidebarMenu>
-      </Sidebar> */}
     </BrowserRouter>
 
   );
