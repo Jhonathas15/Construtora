@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 import { RiTeamLine } from "react-icons/ri";
 import { RxExit } from "react-icons/rx";
 
-
 function Sidebar() {
   const [focus, setFocus] = useState("");
   const router = useNavigate();
